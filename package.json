@@ -5,6 +5,7 @@
   "main": "index.js",
   "homepage": "https://budnickip.github.io/daft4/",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gh-pages -d public"
   },
