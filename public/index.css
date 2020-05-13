@@ -38,12 +38,12 @@ body{
 	font-style: oblique;
 	font-size: 9rem;
 	color: white;
-	/*color: transparent;*/
+	color: transparent;
 	padding: 2rem 0 0 5.8rem;
 
-	/*-webkit-text-stroke: white;*/
-	/*-webkit-text-stroke-width: 1.5px;*/
-	/*-webkit-background-clip: text;*/
+	-webkit-text-stroke: white;
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-background-clip: text;
 }
 
 

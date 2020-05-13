@@ -54,9 +54,10 @@ const drawBackground = (index, alpha = 1) => {
   })
 }
 
-  // const drawTitleBackground = () => {
-  //   title.style.backgroundImage = `url('${canvas.toDataURL('image/jpeg')}')`
-  // }
+  const drawTitleBackground = () => {
+     title.style.backgroundImage = `url('${canvas.toDataURL('image/jpeg')}')`
+     title.style.opacity = 1;
+   }
 
 const draw = () => {
   canvas.setAttribute('width', window.innerWidth)
@@ -68,9 +69,15 @@ const draw = () => {
   drawBackground(currentSlide - 1, previousAlpha)
   drawBackground(currentSlide, currentAlpha)
 
-  // drawTitleBackground()
 
   requestAnimationFrame(() => draw(ctx, canvas))
+  if(previousAlpha == 0 || currentAlpha == 0){
+    drawTitleBackground()
+  }else{
+    title.style.opacity = 0;
+  }
+  //setTimeout(drawTitleBackground(), 1000);
+ // drawTitleBackground()
 }
 
 draw()
